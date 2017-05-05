@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="assets/css/magnific-popup.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
@@ -105,57 +106,71 @@
 				<article id="portfolio">
 					<header>
 						<h2>Here is some of my recent work</h2>
-						<p>Filter by type coming soon...</p>
-					</header>
+						<!--<p>Filter by type coming soon...</p>-->
+					
+                    
+                    <button class="preselect btn2" id="all">All</button>
+                    <button class="btn2" id="d">Data Analysis</button>
+                    <button class="btn2" id="p">Programming</button>
+                    <button class="btn2" id="r">Research</button>
+                    <button class="btn2" id="m">Music</button>
+                    <button class="btn2" id="a">Art</button>
+                    <button class="btn2" id="o">Other</button>
+                    </header>
 					<div class="container">
-						<div class="row">
-							<div class="4u 12u(mobile)">
-								<article class="box style2">
-									<a href="https://rpgroup.org/portals/0/00001.jpg" class="image featured"><img src="images/RP_AWARD.jpg" alt="" /></a>
-									<h3><a href="#">Research Award</a></h3>
-									<p> Awarded by the <a href="https://rpgroup.org/About-Us">RP Group</a> for a <br><a href="https://rpgroup.org/Portals/0/Documents/Awards/2017/Cost_Effectiness_Study_Summary.pdf">Cost-Effectiveness Study of Pathways</a></p>
-								</article>
-							</div>
-							<div class="4u 12u(mobile)">
-								<article class="box style2">
-									<a href="#" class="image featured"><img src="images/Student_map.jpg" alt="" /></a>
-									<h3><a href="#">Geospatial Visualization</a></h3>
-									<p>A map of all Pasadena City College students for our annual publication</p>
-								</article>
-							</div>
-							<div class="4u 12u(mobile)">
-								<article class="box style2">
-									<iframe width="100%" height="292" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/246409823&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-									<h3><a href="#">Produced "Needed  Me"</a></h3>
-									<p>A Rihanna Cover for Emerald <br> 818k plays</p>
-								</article>
-							</div>
+						<div class="row" id="filter">
+                                
+                                <div class="4u 12u(mobile) d p">
+                                    <article class="box style2">
+                                        <a href="images/student_map.jpg" class="image-popup-vertical-fit" title="Pasadena City College Student Population Map"><img src="images/student_map.jpg" alt="" height ="300px" /></a>
+                                        <h3><a href="#">Geospatial Visualization</a></h3>
+                                        <p>A map of all Pasadena City College students for our annual publication</p>
+                                    </article>
+                                </div>
+                                <div class="4u 12u(mobile) m">
+                                    <article class="box style2">
+                                        <iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/246409823&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+                                        <h3><a href="#">Produced "Needed  Me"</a></h3>
+                                        <p>A Rihanna Cover for Emerald <br> 818k plays</p>
+                                    </article>
+                                </div>
+                                <div class="4u 12u(mobile) r d">
+                                    <article class="box style2">
+                                        <div class="popup-gallery">
+                                        <a href="images/grades.jpg" title="Pasadena City College Grade Inflation" data-ytta-id="-"><img src="images/grades.jpg" width=100% height = 300px></a>
+                                        </div>
+                                        <h3><a href="#">Grade Inflation</a></h3>
+                                        <p>A 35 year trend of instructors increasing their percentage of A grades</p>
+                                    </article>
+                                </div>
+                                <div class="4u 12u(mobile) m">
+                                    <article class="box style2">
+                                        <iframe width=auto height=300px src="https://www.youtube.com/embed/08obYJaU304" frameborder="0" allowfullscreen></iframe>
+                                        <h3><a href="#">Vocal Engineering</a></h3>
+                                        <p>Recorded and produced vocals of Nick Jonas Cover "Close" for Toni Romiti</p>
+                                    </article>
+                                </div>
+				                <div class="4u 12u(mobile) o a">
+                                    <article class="box style2">
+                                        <div class="popup-gallery">
+                                            <a href="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_b.jpg" title="The Cleaner" data-ytta-id="-"><img src="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_s.jpg" width="140" height="145"></a>
+                                            <a href="http://farm9.staticflickr.com/8235/8559402846_8b7f82e05d_b.jpg" title="Swan Lake" data-ytta-id="-"><img src="http://farm9.staticflickr.com/8235/8559402846_8b7f82e05d_s.jpg" width="140" height="145"></a>
+                                            <a href="http://farm9.staticflickr.com/8235/8558295467_e89e95e05a_b.jpg" title="The Shake" data-ytta-id="-"><img src="http://farm9.staticflickr.com/8235/8558295467_e89e95e05a_s.jpg" width="140" height="145"></a>
+                                            <a href="http://farm9.staticflickr.com/8378/8559402848_9fcd90d20b_b.jpg" title="Who's that, mommy?" data-ytta-id="-"><img src="http://farm9.staticflickr.com/8378/8559402848_9fcd90d20b_s.jpg" width="140" height="145"></a>
+                                        </div>
+                                        <h3><a href="#">Southwest Roadtrip</a></h3>
+                                        <p>Here are some photos of my favorite moments</p>
+                                    </article>
+                                </div> 
+                                <div class="4u 12u(mobile) r">
+                                    <article class="box style2">
+                                        <a href="https://rpgroup.org/portals/0/00001.jpg" class="image featured"><img src="images/rp_award.jpg" alt="" height = 310px/></a>
+                                        <h3><a href="#">Research Award</a></h3>
+                                        <p> Awarded by the <a href="https://rpgroup.org/About-Us">RP Group</a> for a <br><a href="https://rpgroup.org/Portals/0/Documents/Awards/2017/Cost_Effectiness_Study_Summary.pdf">Cost-Effectiveness Study of Pathways</a></p>
+                                    </article>
+                                </div>
 						</div>
-						<!--
-                        <div class="row">
-							<div class="4u 12u(mobile)">
-								<article class="box style2">
-									<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-									<h3><a href="#">Tempus dolore</a></h3>
-									<p>Ornare nulla proin odio consequat.</p>
-								</article>
-							</div>
-							<div class="4u 12u(mobile)">
-								<article class="box style2">
-									<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
-									<h3><a href="#">Feugiat aliquam</a></h3>
-									<p>Ornare nulla proin odio consequat.</p>
-								</article>
-							</div>
-							<div class="4u 12u(mobile)">
-								<article class="box style2">
-									<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
-									<h3><a href="#">Sed amet ornare</a></h3>
-									<p>Ornare nulla proin odio consequat.</p>
-								</article>
-							</div>
-						</div>
--->
+                        
 					</div>
 					<footer>
 						<p>Still can't get enough?</p>
@@ -250,6 +265,39 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-
+            <script src="assets/js/test.js"></script>
+            <script src="assets/js/magnific-popup.js"></script>
+            <script>
+            $(document).ready(function() {
+                $('.image-popup-vertical-fit').magnificPopup({
+                    type: 'image',
+                    closeOnContentClick: true,
+                    mainClass: 'mfp-img-mobile',
+                    image: {
+                        verticalFit: true
+                    }
+                });
+            });
+            </script>
+            <script>
+            $(document).ready(function() {
+                $('.popup-gallery').magnificPopup({
+                    delegate: 'a',
+                    type: 'image',
+                    tLoading: 'Loading image #%curr%...',
+                    mainClass: 'mfp-img-mobile',
+                    gallery: {
+                        enabled: true,
+                        navigateByImgClick: true,
+                        preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+                    },
+                    image: {
+                        tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+                        titleSrc: function(item) {
+                            return item.el.attr('title') + '<small>Use your keyboards arrow keys to move through the photos</small>';
+                        }
+                    }
+                });
+            });</script>
 	</body>
 </html>
