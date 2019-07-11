@@ -2378,6 +2378,14 @@
 				width: 100%;
 			}
 
+		.image.glyph {
+			margin: auto;
+  			display: block;
+			height:auto; 
+			width:100%;
+			max-width:inherit;
+		}
+
 /* List */
 
 	ol {
@@ -3266,8 +3274,3 @@
 				}
 
 		}
-/* Edge to Edge */
-
-	.edgetoedge {
-		height:auto; width:100%;
-	}
