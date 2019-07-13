@@ -20,7 +20,24 @@
 
 		gtag('config', 'UA-143778209-1');
 		</script>
+		<!-- End of Tag-->
 	</head>
+	<script>
+		// When the user scrolls the page, execute myFunction 
+		window.onscroll = function() {myFunction()};
+
+		function myFunction() {
+		var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+		var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+		var scrolled = (winScroll / height) * 100;
+		document.getElementById("myBar").style.width = scrolled + "%";
+		}
+	</script>
+	<div class="header2">
+		<div class="progress-container">
+			<div class="progress-bar" id="myBar"></div>
+		</div> 
+	</div>
 	<body class="landing">
 
 		<!-- Header -->
@@ -160,7 +177,7 @@
 					<div class="container">
 						<header class="major">
 							<h2>Currently Seeking Opportunities</h2>
-							<p>Contact me to talk about data science</p>
+							<p><a href="mailto:seanmalone3@gmail.com">Contact me</a> to talk about data science</p>
 						</header>
 						<ul class="actions">
 							<!--<li><a href="#" class="button special big">Get in touch</a></li>-->
